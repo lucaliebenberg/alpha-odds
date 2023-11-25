@@ -1,39 +1,26 @@
 import React from "react";
 
-import heroVid from "../assets/video.mp4";
-
 const Hero = () => {
   return (
-    <div className="w-full h-[90vh] top-[90px]">
-      <video
-        className="object-cover h-full w-full absolute -z-10"
-        src={heroVid}
-        autoPlay
-        loop
-        muted
-      />
+    <div className="w-full h-[90vh] top-[90px] bg-gradient-to-b from-purple-500 to-yellow-100">
       <div className="w-full h-[90%] flex flex-col justify-center items-center text-white px-4 text-center">
-        <h1>Decentralized</h1>
-        <h1 className="py-2">
-          <span className="blue">Trading</span> Protocol
-        </h1>
-        <p className="text-xl py-4">
-          Guaranteed liquidity trading for millions of users and top Ethereum
-          applications.
-        </p>
-        <div>
-          <a href="https://defillama.com/" target="_blank" rel="noreferrer">
-            <button className="m-2 hover:scale-105 duration-300 ease-in-out">
-              Get Started Now
+        <h1>Markets</h1>
+        <div className="mt-5">
+          <a
+            href="https://defillama.com/"
+            target="_blank"
+            rel="noreferrer"
+            className=""
+          >
+            <button
+              className="m-2 hover:scale-105 duration-300 ease-in-out bg-purple-900
+            text-white"
+            >
+              View Now
             </button>
           </a>
           {/* <button className="m-2">FAQ</button> */}
         </div>
-      </div>
-      <div>
-        <p className="text-center text-white text-2xl font-bold">
-          Total Volume Secured: $42,104,783,662.47
-        </p>
       </div>
     </div>
   );

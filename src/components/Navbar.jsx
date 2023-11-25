@@ -38,31 +38,24 @@ const Navbar = () => {
   }
 
   return (
-    <div className="w-full h-[90px] bg-black">
+    <div className="w-full h-[90px] bg-purple-500">
       <div className="max-w-[1240px] mx-auto px-4 flex justify-between items-center h-full">
         <div className="flex flex-row hover:cursor-pointer">
-          <img
-            src={Logo}
-            height="40px"
-            width="40px"
-            alt="DeFi Solutions logo"
-            className="mr-3"
-          />
-          <h1 className="text-[#00d8ff]">DS</h1>
+          <h1 className="text-white tracking-wide">ALPHA ODDS</h1>
         </div>
         <div className="hidden md:flex">
           <ul className="flex text-white items-center">
-            <a href="#platform">
+            <a href="#platform" className="hidden">
               <li className="hover:text-[#00d8ff] hover:cursor-pointer transition-all duration-300 ease-in-out">
                 Platform
               </li>
             </a>
-            <a href="#developers">
+            <a href="#developers" className="hidden">
               <li className="hover:text-[#00d8ff] hover:cursor-pointer transition-all duration-300 ease-in-out">
                 Developers
               </li>
             </a>
-            <a href="#community">
+            <a href="#community" className="hidden">
               <li className="hover:text-[#00d8ff] hover:cursor-pointer transition-all duration-300 ease-in-out">
                 Community
               </li>
@@ -70,7 +63,7 @@ const Navbar = () => {
 
             <button
               id="walletButton"
-              className="ml-4 hover:scale-105 duration-300 ease-in-out"
+              className="ml-4 hover:scale-105 duration-300 ease-in-out bg-purple-900"
               onClick={connectWalletPressed}
             >
               {walletAddress.length > 0 ? (
@@ -110,13 +103,13 @@ const Navbar = () => {
           }
         >
           <ul>
-            <a href="#platform">
+            <a href="#platform" className="hidden">
               <li className="text-2xl">Platform</li>
             </a>
-            <a href="#developers">
+            <a href="#developers" className="hidden">
               <li className="text-2xl">Developers</li>
             </a>
-            <a href="#community">
+            <a href="#community" className="hidden">
               <li className="text-2xl">Community</li>
             </a>
             <button
