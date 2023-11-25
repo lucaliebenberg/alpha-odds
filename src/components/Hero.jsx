@@ -14,7 +14,6 @@ const Hero = () => {
               View Now
             </button>
           </a>
-          {/* <button className="m-2">FAQ</button> */}
         </div>
       </div>
     </div>
