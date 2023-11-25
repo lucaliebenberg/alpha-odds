@@ -6,12 +6,7 @@ const Hero = () => {
       <div className="w-full h-[90%] flex flex-col justify-center items-center text-white px-4 text-center">
         <h1>Markets</h1>
         <div className="mt-5">
-          <a
-            href="https://defillama.com/"
-            target="_blank"
-            rel="noreferrer"
-            className=""
-          >
+          <a href="/about" className="">
             <button
               className="m-2 hover:scale-105 duration-300 ease-in-out bg-purple-900
             text-white"

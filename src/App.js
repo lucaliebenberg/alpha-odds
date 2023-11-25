@@ -1,13 +1,18 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React from "react";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import About from "./components/About";
 
 function App() {
   return (
-    <div className="h-[90vh]">
+    <BrowserRouter>
       <Navbar />
-      <Hero />
-    </div>
+      <Routes>
+        <Route exact="true" path="/" element={<Hero />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

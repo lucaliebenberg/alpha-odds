@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import Logo from "../assets/defi-logo.png";
 import { connectWallet, getCurrentWalletConnected } from "../utils/interact";
 
 const Navbar = () => {
@@ -39,10 +38,12 @@ const Navbar = () => {
 
   return (
     <div className="w-full h-[90px] bg-purple-500">
-      <div className="max-w-[1240px] mx-auto px-4 flex justify-between items-center h-full">
-        <div className="flex flex-row hover:cursor-pointer">
-          <h1 className="text-white tracking-wide">ALPHA ODDS</h1>
-        </div>
+      <div className="max-w-[1240px] mx-auto px-12 flex justify-between items-center h-full">
+        <a href="/">
+          <div className="flex flex-row hover:cursor-pointer">
+            <h1 className="text-white tracking-wide">ALPHA ODDS</h1>
+          </div>
+        </a>
         <div className="hidden md:flex">
           <ul className="flex text-white items-center">
             <a href="#platform" className="hidden">
