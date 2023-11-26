@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 const AboutCard = () => {
   const [web3, setWeb3] = useState(null);
   const [contract, setContract] = useState(null);
+  const [number, setNumber] = useState("");
 
   const [sharesAmount, setSharesAmount] = useState(0);
   const [avgPrice, setAvgPrice] = useState(0);
@@ -190,13 +191,13 @@ const AboutCard = () => {
           <p className="mt-2 mb-2">OUTCOME</p>
           <div className="flex flex-row justify-center align-middle gap-8 px-4">
             <button
-              className="w-[141px] h-[36px] border border-white rounded-[10px] pt-2"
+              className="w-[141px] h-[36px] border border-white rounded-[10px] pt-2  hover:bg-purple-900 hover:text-white hover:font-bold transition-all ease-in-out hover:border-none"
               onClick={() => handleBuyShares(0, true)}
             >
               <span>YES</span>
             </button>
             <button
-              className="w-[141px] h-[36px] border border-white rounded-[10px] pt-2"
+              className="w-[141px] h-[36px] border border-white rounded-[10px] pt-2  hover:bg-purple-900 hover:text-white hover:font-bold transition-all ease-in-out hover:border-none"
               onClick={() => handleBuyShares(0, false)}
             >
               <span>NO</span>
@@ -208,13 +209,19 @@ const AboutCard = () => {
         <div className="p-1">
           <p className="mt-2 mb-2">AMOUNT</p>
           <div className="w-full flex justify-center align-middle mt-4 mb-4">
-            <button className=" border border-white rounded-[10px] w-[90%]">
+            {/* <button className=" border border-white rounded-[10px] w-[90%]">
               0$
-            </button>
+            </button> */}
+            <input
+              type="number"
+              className="bg-transparent border border-white text-white placeholder-white rounded-[10px] w-[90%] p-2"
+              placeholder="Enter Amount"
+              onChange={(e) => setNumber(e.target.value)}
+            />
           </div>
           <div className="w-full flex justify-center align-middle">
             <button
-              className=" border border-white rounded-[10px] w-[90%]"
+              className=" border border-white rounded-[10px] w-[90%] hover:bg-purple-900 hover:text-white hover:font-bold transition-all ease-in-out hover:border-none"
               onClick={() => handleBuyShares(true)}
             >
               BUY
