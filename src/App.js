@@ -3,15 +3,18 @@ import React from "react";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
+import { WalletProvider } from "./components/WalletContext";
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route exact="true" path="/" element={<Hero />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+      <WalletProvider>
+        <Navbar />
+        <Routes>
+          <Route exact="true" path="/" element={<Hero />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </WalletProvider>
     </BrowserRouter>
   );
 }
