@@ -6,7 +6,7 @@ const About = () => {
     <div className="w-full h-[90vh] top-[90px] bg-gradient-to-b from-purple-500 to-yellow-100 text-whte flex flex-row justify-between align-middle">
       <div className="w-full h-[90%] flex flex-col justify-center items-start text-white px-12">
         <h2 className="text-[2em] max-w-[26rem] text-left mb-8 font-mono">
-          ALPHA ODDS WIINS THE CELO DEFI HACKATHON
+          ALPHA ODDS WINS THE CELO DEFI HACKATHON
         </h2>
         <p className="mb-2">ABOUT</p>
         <div className="border border-white w-[82%] mb-4">
