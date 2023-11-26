@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full h-[90px] bg-purple-500">
-      <div className="max-w-[1240px] mx-auto px-12 flex justify-between items-center h-full">
+      <div className="max-w-[1240px] mx-auto px-4 flex justify-between items-center h-full">
         <a href="/">
           <div className="flex flex-row hover:cursor-pointer">
             <h1 className="text-white tracking-wide">ALPHA ODDS</h1>
