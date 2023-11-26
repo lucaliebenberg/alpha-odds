@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useWallet } from "./WalletContext";
 
 const AboutCard = () => {
   const [web3, setWeb3] = useState(null);
@@ -134,6 +133,7 @@ const AboutCard = () => {
 
       const myContract = new web3.eth.Contract(contractABI, contractAddress);
       setContract(myContract);
+      console.log(setWeb3());
     }
   }, [web3, contractAddress]);
 
@@ -157,6 +157,7 @@ const AboutCard = () => {
       setAvgPrice(newAvgPrice);
       setShares(newShares);
       setPotentialReturn(newPotentialReturn);
+      console.log(setSharesAmount());
 
       console.log(`Bought ${sharesAmount} shares of outcome ${outcome}`);
       console.log("Transaction Hash:", tx.transactionHash);
@@ -165,14 +166,14 @@ const AboutCard = () => {
     }
   };
 
-  const handleSharesAmountChange = (event) => {
-    const inputShares = Number(event.target.value);
-    setSharesAmount(inputShares);
+  //   const handleSharesAmountChange = (event) => {
+  //     const inputShares = Number(event.target.value);
+  //     setSharesAmount(inputShares);
 
-    // Calculate and update potential return based on the current average price
-    const newPotentialReturn = inputShares * avgPrice;
-    setPotentialReturn(newPotentialReturn);
-  };
+  //     // Calculate and update potential return based on the current average price
+  //     const newPotentialReturn = inputShares * avgPrice;
+  //     setPotentialReturn(newPotentialReturn);
+  //   };
 
   return (
     <div className="w-[34vw] h-auto miin-h-[50.8vh] top-[90px] bg-transparent text-whte border border-white rounded-md">
