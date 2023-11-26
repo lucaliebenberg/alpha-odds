@@ -218,6 +218,7 @@ const AboutCard = () => {
               placeholder="Enter Amount"
               onChange={(e) => setNumber(e.target.value)}
             />
+            {console.log(number)}
           </div>
           <div className="w-full flex justify-center align-middle">
             <button
