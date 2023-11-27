@@ -1,5 +1,7 @@
 import React from "react";
 import AboutCard from "./AboutCard";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { connectWallet, getCurrentWalletConnected } from "../utils/interact";
 
 const About = () => {
   return (
